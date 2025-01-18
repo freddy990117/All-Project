@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Lobster", cursive;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  h1 {
+    margin-top: 3vh;
+    font-size: 4.5vw;
+    align-self: center;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    .panel {
+      background-repeat: no-repeat;
+      background-position: revert;
+      background-size: cover;
+      height: 80vh;
+      width: 100%;
+      border-radius: 4vw;
+      margin: 1vw;
+      flex: 0.5;
+      cursor: pointer;
+      transition: ease-in 0.5s flex;
+      position: relative;
+      h3 {
+        font-size: 3vw;
+        position: absolute;
+        bottom: 1vh;
+        left: 2vw;
+        color: #fff;
+        opacity: 0;
+      }
+    }
+    .active {
+      flex: 5;
+      h3 {
+        transition: ease 1.5s opacity;
+        opacity: 1;
+      }
+    }
+  }
+  p {
+    font-size: 3vw;
+    text-align: center;
+  }
+}

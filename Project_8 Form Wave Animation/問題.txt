@@ -1,0 +1,14 @@
+SCSS : 
+
+input:foucs + span 跟 :valid + span 
+該怎麼設定
+要設在哪邊
+文字該怎麼往上移
+transition transform 要設在哪邊
+
+JS : 
+取得 label 後
+該怎麼讓每個 label 都運作到
+該怎麼讓 label 轉換成 span (中間有三個步驟，labe是一個 array，要把它分開會怎麼分開 ? )
+
+怎麼在 JS 內設定 html 與 css 

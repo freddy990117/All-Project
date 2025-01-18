@@ -1,0 +1,74 @@
+* {
+  // Font Set
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body::before {
+  content: "";
+  background-image: url(Search.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -999;
+  filter: blur(1px);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  color: white;
+  .title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 4vw;
+    width: 13vw;
+    transition: width 0.5s ease;
+  }
+  .title.active {
+    width: 18vw;
+  }
+  .search {
+    position: relative;
+    height: 8vh;
+    .input,
+    .btn {
+      height: 8vh;
+      width: 4vw;
+      outline: none;
+      border: none;
+      border-radius: 3vw;
+    }
+    .input {
+      font-size: 2vw;
+      border-radius: 3vw;
+      transition: width 0.5s ease;
+    }
+    .btn {
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: transform 0.5s ease;
+    }
+  }
+  .search.active .input {
+    width: 20vw;
+  }
+  .search.active .btn {
+    transform: translateX(16vw);
+  }
+}

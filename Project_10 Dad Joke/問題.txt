@@ -1,0 +1,8 @@
+1.著重在 async function 的 Promise hook 該怎麼撰寫
+2.思考 Dad Joke 的 API 該怎麼撰寫
+3.單純 await API's URL 只能要到狀態，該怎麼拿到 json() 的資料 (網站內有提示)
+
+
+
+
+https://icanhazdadjoke.com/api#fetch-a-dad-joke-as-an-image

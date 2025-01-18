@@ -1,0 +1,3 @@
+JS 比較困難的一個 Project，主要學習到了 setTimeout setInterval 
+
+可以多練習看看~ 
